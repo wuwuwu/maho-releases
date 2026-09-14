@@ -13,10 +13,5 @@ This repository exists to be fetched by a program. It holds the update feed for
   update window shows before anybody agrees to install anything. `.nojekyll` is here so that Pages
   serves those files as they were written instead of building a site out of them.
 
-The source tarball is not ceremony. Maho links vendored code from
-[Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) under the MPL-2.0, and MPL asks that
-the source of those files be available to whoever receives a binary built from them. A tarball beside
-each release is that, until the main repository is public.
-
 Maho itself is not developed here and issues filed here will not be seen. The app is at
 [wuwuwu/maho](https://github.com/wuwuwu/maho).
