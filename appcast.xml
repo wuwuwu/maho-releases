@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>Maho</title>
+        <link>https://wuwuwu.github.io/maho-releases/appcast.xml</link>
+        <description>Updates for Maho, a macOS manga reader.</description>
+        <language>en</language>
+        <!-- No items yet. generate_appcast rewrites this whole file from the archives in dist/,
+             signing each one; nothing here is edited by hand. -->
+    </channel>
+</rss>
