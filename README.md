@@ -5,8 +5,13 @@ This repository exists to be fetched by a program. It holds the update feed for
 
 - **[`appcast.xml`](appcast.xml)** — the Sparkle feed. Every installed copy of Maho reads it from
   `https://wuwuwu.github.io/maho-releases/appcast.xml`, which is this file served by GitHub Pages.
-- **[Releases](../../releases)** — one per version, holding the `.zip` the updater downloads, the
-  `.dmg` a person installs from the first time, and a source tarball.
+- **[Releases](../../releases)** — a single `archives` tag holding every version's `.zip`, the
+  `.dmg` a person installs from the first time, and the deltas between adjacent versions. One tag
+  rather than one per version because the feed carries a single download prefix for every enclosure
+  in it, so the prefix has to be a constant.
+- **`Maho-<version>.md`** — the release notes for each version, which the feed links to and the
+  update window shows before anybody agrees to install anything. `.nojekyll` is here so that Pages
+  serves those files as they were written instead of building a site out of them.
 
 The source tarball is not ceremony. Maho links vendored code from
 [Suwayomi-Server](https://github.com/Suwayomi/Suwayomi-Server) under the MPL-2.0, and MPL asks that
